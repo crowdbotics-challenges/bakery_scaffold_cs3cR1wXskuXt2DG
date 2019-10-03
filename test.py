@@ -202,14 +202,14 @@ class AssessmentTestCases(unittest.TestCase):
         return res.group().split("'")[1]
 
     def _get_url(self):
-        return "https://fierce-beyond-16493.herokuapp.com/"
+        return "https://arcane-garden-59356.herokuapp.com/"
 
     def _check_webhook_data(self):
         x = urllib.request.urlopen(f'{self._get_url()}/payment_intent')
         return json.loads(x.read())
 
     def _retrieve_stripe_event(self, event):
-        stripe.api_key = "sk_test_i3BQWTH5W85BpCpG5whN2ieu00FAk9aIKH"
+        stripe.api_key = "sk_test_l3Yh1RgI9OgoGiWv9EHZoiCT00yMfWjLWM"
 
         return stripe.Event.retrieve(event)
 

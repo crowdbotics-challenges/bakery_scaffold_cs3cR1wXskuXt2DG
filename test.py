@@ -202,7 +202,7 @@ class AssessmentTestCases(unittest.TestCase):
         return res.group().split("'")[1]
 
     def _get_url(self):
-        return "https://dry-inlet-62635.herokuapp.com/"
+        return "https://fierce-beyond-16493.herokuapp.com/"
 
     def _check_webhook_data(self):
         x = urllib.request.urlopen(f'{self._get_url()}/payment_intent')
